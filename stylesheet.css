@@ -1,0 +1,97 @@
+header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-weight: bold;
+  /*font-size: 20px;*/
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.title {
+  text-align: center;
+  height: 12vh;
+  padding: 0.5vw 1vw;
+
+}
+.title_element {
+  display: inline-block;
+  height: 100%;
+  font-size: 3.5vh;
+}
+
+
+#logo {
+  float: left;
+  width: 15%;
+  height: auto;
+}
+
+#container{
+  display: table;
+  font-size: 6vw;
+}
+
+
+.pages{
+  padding-top: 7vh;
+  width: 100%;
+}
+.main_button {
+  display: block;
+  padding: 20px 60px;
+  background-color: #009BFF;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  width: 50%;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 5vw;
+}
+
+.test{
+  padding-bottom: 6vh;
+}
+
+.main_button:hover{
+  background-color: white;
+  color: #009BFF;
+  border: 2px solid #009BFF;
+}
+.main_button:active {
+  background-color: #014673;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+
+.settings{
+  position: relative;
+  width: 10%;
+}
+
+.settings img {
+  width: 100%;
+  height: auto;
+}
+
+.settings img:hover {
+  cursor: pointer;
+}
+
+.settings .settings_button {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0);;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
