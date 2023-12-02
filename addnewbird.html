@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="main2.js" defer></script>
+
+</head>
+<body>
+
+  <div class='title'>
+    <img class='title_element' id='logo' src="logo.png" alt="RSPB logo">
+
+    <img  class='title_element' id='settings' src="settings.png" alt="settings">
+    <button class="title_element" id='settings_button'>Settings</button>
+
+    <img  class='title_element' id='home' src="home.png" alt="home">
+    <button class="title_element" id='settings_button2'>Home</button>
+
+    <div class='title_element' id='container2'>Royal Society for the Protection of Birds
+    <br>Add new bird</div>
+
+  </div>
+
+<div class="topnav">
+  <div class="search-container">
+    <input class="search" type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+   </div>
+
+<div class="container">
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Filter
+
+    <span class="caret"></span></button>
+
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Size <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" onclick="filterOne()">Small</a></li>
+          <li><a tabindex="-1" onclick="filterTwo()">Medium</a></li>
+          <li><a tabindex="-1" onclick="filterThree()">Large</a></li>
+
+      </li>
+        </ul>
+
+        <li class="dropdown-submenu">
+          <a class="test" tabindex="-1" href="#">Colour <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" onclick="filterOne()">Grey</a></li>
+            <li><a tabindex="-1" onclick="filterTwo()">Brown</a></li>
+            <li><a tabindex="-1" onclick="filterThree()">White</a></li>
+            <li><a tabindex="-1" onclick="filterTwo()">Black</a></li>
+        </li>
+          </ul>
+
+          <li class="dropdown-submenu">
+            <a class="test" tabindex="-1" href="#">Beak Shape <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a tabindex="-1" onclick="filterOne()">Short and thick</a></li>
+              <li><a tabindex="-1" onclick="filterThree()">Hooked</a></li>
+              <li><a tabindex="-1" onclick="filterTwo()">Long and thin</a></li>
+              <li><a tabindex="-1" onclick="filterThree()">Spoon Shapedk</a></li>
+          </li>
+            </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+<div class="grid-container">
+  <div class="grid-item">
+    <img class="bird" src="blue_tit.jpg" alt="blue tit">
+    <br>Blue<br> Tit<br>
+    <button>Add to bird count</button>
+  </div>
+
+
+  <div class="grid-item one">
+    <img class="bird" src="house_sparrow.jpg" alt="house sparrow">
+    <br>House<br> Sparrow<br>
+    <button>Add to bird count</button>
+  </div>
+
+  <div class="grid-item two">
+    <img class="bird" src="starling.jpg" alt="Starling">
+    <br>House<br> Starling<br>
+    <button>Add to bird count</button>
+  </div>
+
+  <div class="grid-item two">
+    <img class="bird" src="wood_pigeon.jpg" alt="Wood Pigeon">
+    <br>Wood<br> Pigeon<br>
+    <button>Add to bird count</button>
+  </div>
+
+  <div class="grid-item two">
+    <img class="bird" src="magpie.jpg" alt="Magpie">
+    <br>Magpie<br>
+    <button>Add to bird count</button>
+  </div>
+
+  <div class="grid-item one">
+    <img class="bird" src="black_bird.jpg" alt="Black Bird">
+    <br>Black<br>Bird<br>
+    <button>Add to bird count</button>
+  </div>
+
+  <div class="grid-item three">
+    <img class="bird" src="great_tit.jpg" alt="Great Tit">
+    <br>Great<br>Tit</br>
+    <button>Add to bird count</button>
+  </div>
+
+  <div class="grid-item three">
+    <img class="bird" src="goldfinch.jpg" alt="goldfinch">
+    <br>Gold<br>Finch<br>
+    <button>Add to bird count</button>
+  </div>
+
+  <div class="grid-item" id="back">
+    <img class="bird" src="back.jpeg" alt="Back arrow">
+    <br>Back to<br>Bird Count<br>
+  </div>
+</div>
+
+
+
+</body>
+</html>
