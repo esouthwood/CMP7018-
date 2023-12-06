@@ -22,8 +22,12 @@
     <img  class='title_element' id='settings' src="settings.png" alt="settings">
     <button class="title_element" id='settings_button'>Settings</button>
 
-    <img  class='title_element' id='home' src="home.png" alt="home">
-    <button class="title_element" id='settings_button2'>Home</button>
+    <a href='homepage.html'>
+      <img  class='title_element' id='home' src="home.png" alt="home">
+    </a>
+    <a href='homepage.html'>
+      <button class="title_element" id='settings_button2'>Home</button>
+    </a>
 
     <div class='title_element' id='container2'>Royal Society for the Protection of Birds
     <br>Add new bird</div>
@@ -32,7 +36,7 @@
 
 <div class="topnav">
   <div class="search-container">
-    <input class="search" type="text" placeholder="Search.." name="search">
+    <input class="search" id="myInput" onkeyup="myFunction2()"  type="text" placeholder="Search.." name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
    </div>
 
@@ -80,59 +84,61 @@
 </div>
 
 
-<div class="grid-container">
-  <div class="grid-item">
+<div class="grid_container" id="myGrid">
+  <div class="grid_item">
     <img class="bird" src="blue_tit.jpg" alt="blue tit">
-    <br>Blue<br> Tit<br>
+    <p>Blue<br> Tit<br></p>
     <button>Add to bird count</button>
   </div>
 
 
-  <div class="grid-item one">
+  <div class="grid_item one">
     <img class="bird" src="house_sparrow.jpg" alt="house sparrow">
-    <br>House<br> Sparrow<br>
+    <p>House<br> Sparrow<br></p>
     <button>Add to bird count</button>
   </div>
 
-  <div class="grid-item two">
+  <div class="grid_item two">
     <img class="bird" src="starling.jpg" alt="Starling">
-    <br>House<br> Starling<br>
+    <p>House<br> Starling<br></p>
     <button>Add to bird count</button>
   </div>
 
-  <div class="grid-item two">
+  <div class="grid_item two">
     <img class="bird" src="wood_pigeon.jpg" alt="Wood Pigeon">
-    <br>Wood<br> Pigeon<br>
+    <p>Wood<br> Pigeon</p>
     <button>Add to bird count</button>
   </div>
 
-  <div class="grid-item two">
+  <div class="grid_item two">
     <img class="bird" src="magpie.jpg" alt="Magpie">
-    <br>Magpie<br>
+    <p>Magpie<br> <br></p>
     <button>Add to bird count</button>
   </div>
 
-  <div class="grid-item one">
+  <div class="grid_item one">
     <img class="bird" src="black_bird.jpg" alt="Black Bird">
-    <br>Black<br>Bird<br>
+    <p>Black<br>Bird<br></p>
     <button>Add to bird count</button>
   </div>
 
-  <div class="grid-item three">
+  <div class="grid_item three">
     <img class="bird" src="great_tit.jpg" alt="Great Tit">
-    <br>Great<br>Tit</br>
+    <p>Great<br>Tit</br></p>
     <button>Add to bird count</button>
   </div>
 
-  <div class="grid-item three">
+  <div class="grid_item three">
     <img class="bird" src="goldfinch.jpg" alt="goldfinch">
-    <br>Gold<br>Finch<br>
+    <p>Gold<br>Finch<br></p>
     <button>Add to bird count</button>
   </div>
 
-  <div class="grid-item" id="back">
-    <img class="bird" src="back.jpeg" alt="Back arrow">
-    <br>Back to<br>Bird Count<br>
+  <div class="grid_item" id="back">
+    <a href='birdcount.html'>
+      <img class="bird" src="back.jpeg" alt="Back arrow">
+      <br>Back to<br>Bird Count<br>
+    </a>
   </div>
 </div>
 

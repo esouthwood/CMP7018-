@@ -29,3 +29,25 @@ function filterThree(){
         divsToHide[i].style.display = "none"; // depending on what you're doing
     }
 }
+
+function myFunction2() {
+  // Declare variables
+  var input, filter, div, myGrid, txtValue, a;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  myGrid = document.getElementById("myGrid");
+  div = myGrid.getElementsByTagName('div');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < div.length; i++) {
+    a = div[i].getElementsByTagName("p")[0];
+
+    txtValue = a.textContent || a.innerText;
+
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      div[i].style.display = "";
+    } else {
+      div[i].style.display = "none";
+    }
+  }
+}
