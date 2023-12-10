@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Registration Form</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+  <div class='title'>
+    <img class='title_element' id='logo' src="logo.png" alt="RSPB logo">
+
+   
+
+
+    <div class='title_element' id='container2'>Royal Society for the Protection of Birds
+    <br>Big garden Bird Watch</div>
+
+  </div>
+
+
+  <div class="form-container" id="loginFormContainer">
+    <h2>Login</h2>
+    <form id="loginForm" action="homepage.html"> 
+      <div class="form-group">
+        <label for="loginUsername">Username:</label>
+        <input type="text" id="loginUsername" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="password" required>
+      </div>
+
+      <button type="submit" class="button">Login</button>
+    </form>
+
+    <div class="forgot-password">
+      <a href="forgotpassword.html" >Forgot Password?</a>
+    </div>
+
+    <div class="forgot-password">
+        <a href="register.html" >New user? Register here</a>
+      </div>
+
+      <div class="forgot-password">
+        <a href="adminlogin.html" >Admin? Login here</a>
+      </div>
+      
+  </div>
+
+  <div class="form-container" id="registerFormContainer" style="display:none;">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="registerUsername">Username:</label>
+        <input type="text" id="registerUsername" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="registerPassword">Password:</label>
+        <input type="password" id="registerPassword" name="password" required>
+      </div>
+
+      <button type="button" onclick="registerUser()">Register</button>
+    </form>
+  </div>
+
+  <script>
+    
+
+    function showForgotPassword() {
+      alert("Implementing forgot password functionality is a separate process.");
+      // You may want to redirect the user to a forgot password page or show a modal for password recovery.
+    }
+
+    function registerUser() {
+      var username = document.getElementById("registerUsername").value;
+      var password = document.getElementById("registerPassword").value;
+
+      // Simple validation for registration
+      if (username === "" || password === "") {
+        alert("Please enter both username and password for registration.");
+      } else {
+        alert("User registered successfully!");
+        // You may want to store user information in a database or redirect the user to a login page.
+      }
+    }
+  </script>
+
+</body>
+</html>
