@@ -1,8 +1,7 @@
-/**
-Collect all <button> into a NodeList
-On each <button> register the "click" event
-Event handler incDec() is called
-*/
+function submitted() {
+  alert("Your results have been submitted!");
+}
+
 document.querySelectorAll('button').forEach(btn => btn.onclick = incDec);
 
 

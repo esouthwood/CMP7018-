@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+	<div class='title'>
+	<img class='title_element' id='logo' src="logo.png" alt="RSPB logo">
+
+	<img  class='title_element' id='settings' src="settings.png" alt="settings">
+	<button class="title_element" id='settings_button'>Settings</button>
+	<a  href='homepage.html'>
+		<img  class='title_element' id='home' src="home.png" alt="home">
+	</a>
+	<a  href='homepage.html'>
+		<button class="title_element" id='settings_button2'>Home</button>
+	</a>
+
+	<div class='title_element' id='container2'>RSPB
+	<br>Big garden Bird Watch</div>
+
+</div>
+<div class="top">
+	<div class="controls"  style="margin-top: 8vw;background-color:#D3D3D3; overflow:hidden; width: 200px" >
+		<p>Allow access to camera?</p>
+		<button class="btn btn-danger play" title="Play">Yes</button>
+		<button class="btn no">No</button>
+
+	</div>
+
+<div class="display-cover">
+    <video autoplay></video>
+    <canvas class="d-none"></canvas>
+
+    <div class="video-options">
+        <select name="" id="" class="custom-select">
+            <option value="">Select camera</option>
+        </select>
+    </div>
+
+    <img class="screenshot-image d-none" alt="">
+
+
+</div>
+<div class="wrapper">
+
+<button class="submit" id="myBtn">Scan</button>
+
+</div>
+<div class="scanbird">
+
+  <a href='addnewbird.html.html'>
+    <img class="back_arrow" style="width: 10%;" src="back.jpeg" alt="Back arrow">
+    <br>Back to<br>Identify Birds<br>
+  </a>
+</div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Bird Identified</p>
+    <img class="bird" src="blue_tit.jpg" alt="blue tit">
+    <p>Blue Tit</p>
+  </div>
+
+</div>
+
+
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="main3.js"></script>
+
+</body>
+</html>
