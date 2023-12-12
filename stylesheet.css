@@ -28,6 +28,7 @@ a:hover {
 .title {
   text-align: center;
   height: 10vh;
+  padding-bottom: 8vw;
   margin-bottom: 8vw;
 }
 .title_element {
@@ -40,6 +41,7 @@ a:hover {
   margin: auto;
 
 }
+
 
 
 #logo {
@@ -282,4 +284,128 @@ a:hover {
   background-color: white;
   color: #009BFF;
   border: 1px solid #009BFF;
+}
+
+.submit {
+  display: block;
+  padding: 5px;
+  background-color: #009BFF;
+  border-radius: 3vw;
+  border: none;
+  color: white;
+  width: 50%;
+  height: 20%;
+  height: 40%;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 3.5vw;
+}
+
+.submit:hover{
+  background-color: white;
+  color: #009BFF;
+  border: 2px solid #009BFF;
+}
+.submit:active {
+  background-color: #014673;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+
+.display-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+video {
+  margin-top: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.video-options {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  margin-top: 100px;
+}
+
+.play{
+  background-color: green;
+}
+
+.no{
+  background-color: red;
+}
+.wrapper {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.scanbird {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+.photo {
+    margin: auto;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
