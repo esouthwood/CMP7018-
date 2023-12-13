@@ -97,6 +97,7 @@ a:hover {
 }
 
 
+
 .pages{
   padding-top: 7vh;
   width: 100%;
@@ -287,15 +288,13 @@ a:hover {
 }
 
 .submit {
-  display: block;
   padding: 5px;
   background-color: #009BFF;
   border-radius: 3vw;
   border: none;
   color: white;
-  width: 50%;
-  height: 20%;
-  height: 40%;
+  width: 40%;
+  height: 50%;
   margin: auto;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -305,12 +304,9 @@ a:hover {
 .submit:hover{
   background-color: white;
   color: #009BFF;
-  border: 2px solid #009BFF;
 }
 .submit:active {
   background-color: #014673;
-  box-shadow: 0 5px grey;
-  transform: translateY(4px);
 }
 
 .display-cover {
@@ -434,7 +430,7 @@ video {
   height: 68px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -492,32 +488,7 @@ input:checked + .slider:before {
   background-color: #f0f0f0;
   color: #333333;
 }
-.submit {
-  display: block;
-  padding: 5px;
-  background-color: #009BFF;
-  border-radius: 3vw;
-  border: none;
-  color: white;
-  width: 50%;
-  height: 20%;
-  height: 40%;
-  margin: auto;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  font-size: 3.5vw;
-}
 
-.submit:hover{
-  background-color: white;
-  color: #009BFF;
-  border: 2px solid #009BFF;
-}
-.submit:active {
-  background-color: #014673;
-  box-shadow: 0 5px grey;
-  transform: translateY(4px);
-}
 
 .display-cover {
   display: flex;
@@ -614,4 +585,18 @@ video {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.top{
+
+}
+.right{
+  float: right;
+  }
+
+.back a{
+  display:block;
+}
+.back{
+  z-index: 1;
+  float: right;
 }
