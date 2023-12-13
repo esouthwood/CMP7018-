@@ -18,10 +18,12 @@
 
   <div class='title'>
     <img class='title_element' id='logo' src="logo.png" alt="RSPB logo">
-
-    <img  class='title_element' id='settings' src="settings.png" alt="settings">
-    <button class="title_element" id='settings_button'>Settings</button>
-
+    <a href='settings.html'>
+      <img  class='title_element' id='settings' src="settings.png" alt="settings">
+    </a>
+    <a href='settings.html'>
+      <button class="title_element" id='settings_button'>Settings</button>
+    </a>
     <a href='homepage.html'>
       <img  class='title_element' id='home' src="home.png" alt="home">
     </a>
@@ -90,50 +92,50 @@
   <div class="grid_item">
     <img class="bird" src="blue_tit.jpg" alt="blue tit">
     <p>Blue<br> Tit<br></p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
 
   <div class="grid_item one">
     <img class="bird" src="house_sparrow.jpg" alt="house sparrow">
     <p>House<br> Sparrow<br></p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
   <div class="grid_item two">
     <img class="bird" src="starling.jpg" alt="Starling">
     <p>House<br> Starling<br></p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
   <div class="grid_item two">
     <img class="bird" src="wood_pigeon.jpg" alt="Wood Pigeon">
     <p>Wood<br> Pigeon</p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
   <div class="grid_item two">
     <img class="bird" src="magpie.jpg" alt="Magpie">
     <p>Magpie<br> <br></p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
   <div class="grid_item one">
     <img class="bird" src="black_bird.jpg" alt="Black Bird">
     <p>Black<br>Bird<br></p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
   <div class="grid_item three">
     <img class="bird" src="great_tit.jpg" alt="Great Tit">
     <p>Great<br>Tit</br></p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
   <div class="grid_item three">
     <img class="bird" src="goldfinch.jpg" alt="goldfinch">
     <p>Gold<br>Finch<br></p>
-    <button>Add to bird count</button>
+    <button id="btnadd">Add to bird count</button>
   </div>
 
   <div class="grid_item" id="back">
@@ -144,7 +146,15 @@
   </div>
 </div>
 
+<div id="myModal2" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Bird Added to Bird Count</p>
+  </div>
+
+</div>
 
 </body>
 </html>

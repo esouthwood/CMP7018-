@@ -15,19 +15,21 @@
 	<div class='title'>
 	<img class='title_element' id='logo' src="logo.png" alt="RSPB logo">
 
-	<img  class='title_element' id='settings' src="settings.png" alt="settings">
-	<button class="title_element" id='settings_button'>Settings</button>
-	<a  href='homepage.html'>
-		<img  class='title_element' id='home' src="home.png" alt="home">
-	</a>
-	<a  href='homepage.html'>
-		<button class="title_element" id='settings_button2'>Home</button>
-	</a>
+  <img  class='title_element' id='settings' src="settings.png" alt="settings">
+  <button class="title_element" id='settings_button'>Settings</button>
+
+  <a  href='homepage.html'>
+    <img  class='title_element' id='home' src="home.png" alt="home">
+  </a>
+  <a  href='homepage.html'>
+    <button class="title_element" id='settings_button2'>Home</button>
+  </a>
+
+
 
 	<div class='title_element' id='container2'>RSPB
 	<br>Big garden Bird Watch</div>
 
-</div>
 <div class="top">
 	<div class="controls"  style="margin-top: 8vw;background-color:#D3D3D3; overflow:hidden; width: 200px" >
 		<p>Allow access to camera?</p>
@@ -35,6 +37,7 @@
 		<button class="btn no">No</button>
 
 	</div>
+
 
 <div class="display-cover">
     <video autoplay></video>
@@ -50,18 +53,19 @@
 
 
 </div>
-<div class="wrapper">
+<div class="one" style="margin-top:1vw; width: 100%;">
 
-<button class="submit" id="myBtn">Scan</button>
-
+<button class="scan" id="myBtn">Scan</button>
+<div class="back" style="display: block; width:25%;">
+<a  href='identifybird.html'>
+  <img style="width:20%" src="back.jpeg" alt="home">
+</a>
+<a  href='identifybird.html'>
+  <button>Back</button>
+</a>
 </div>
-<div class="scanbird">
-
-  <a href='addnewbird.html.html'>
-    <img class="back_arrow" style="width: 10%;" src="back.jpeg" alt="Back arrow">
-    <br>Back to<br>Identify Birds<br>
-  </a>
 </div>
+
 </div>
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -70,7 +74,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <p>Bird Identified</p>
-    <img class="bird" src="blue_tit.jpg" alt="blue tit">
+    <img class="bird" style="width:50%; height: 50%;" src="blue_tit.jpg" alt="blue tit">
     <p>Blue Tit</p>
   </div>
 
