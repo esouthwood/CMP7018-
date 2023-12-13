@@ -288,6 +288,7 @@ a:hover {
 }
 
 .submit {
+  display: block;
   padding: 5px;
   background-color: #009BFF;
   border-radius: 3vw;
@@ -598,4 +599,27 @@ video {
 }
 .back{
   float: right;
+}
+
+.scan {
+  padding: 5px;
+  background-color: #009BFF;
+  border-radius: 3vw;
+  border: none;
+  color: white;
+  width: 40%;
+  height: 50%;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 3.5vw;
+}
+
+.scan:hover{
+  background-color: white;
+  color: #009BFF;
+}
+.scan:active {
+  background-color: #014673;
+  box-shadow: 0 5px grey;
 }
