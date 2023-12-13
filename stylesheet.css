@@ -597,6 +597,5 @@ video {
   display:block;
 }
 .back{
-  z-index: 1;
   float: right;
 }
