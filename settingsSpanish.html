@@ -20,29 +20,21 @@
     }
   </script>
 
-<script>
-  function submitForm() {
-    // Get the form element
-    var form = document.getElementById('myForm');
-
-    // Submit the form
-    form.submit();
-  }
-</script> 
-
+  
 </head>
 <body>
   <div class='title'>
     
 
     
-    <a  href='adminhomepage.html'>
+    <a  href='homepage.html'>
       <img  class='title_element' id='home' src="home.png" alt="home">
     </a>
-    <a  href='adminhomepage.html'>
-      <button class="title_element" id='settings_button' class="changeable-text">Home</button>
+    <a  href='homepage.html'>
+      <button class="title_element" id='settings_button' class="changeable-text">Hogar</button>
     </a>
-    <div class='title_element' id='container2' class="changeable-text">Settings
+    <div class='title_element' id='container2' class="changeable-text">
+        Ajustes
         
 
 
@@ -51,7 +43,7 @@
     <div class="grid_item_about">
         
         <div style="width: 100%; overflow: hidden;">
-            <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange1"> Text to speech </div>
+            <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange1"> Texto a voz </div>
             <div style="margin-left: 800px;"> <label class="switch">
                 <input type="checkbox">
                 <span class="slider"></span>
@@ -65,7 +57,7 @@
     <div class="grid_item_about">
       
       <div style="width: 100%; overflow: hidden;">
-        <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange2"> Colour blind settings </div>
+        <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange2"> Configuraciones daltónicas </div>
             <div style="margin-left: 800px;"> <label class="switch" >
                 <input type="checkbox" onclick="applyColorMode">
                 <span class="slider"></span>
@@ -74,19 +66,19 @@
       
       
     </div>
-  <form action="settingsSpanishAdmin.html" id="myForm">
+  
     <div class="grid_item_about">
       
       <div style="width: 100%; overflow: hidden;">
-        <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange3"> Language </div>
-            <div style="margin-left: 800px;" class="changeable-text"> <select name="Language" id="" onchange="submitForm()">
+        <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange3"> Idioma </div>
+            <div style="margin-left: 800px;" class="changeable-text"> <select name="Language" id="" onchange="changeableText()">
               <option value="1">
                 English
               </option>
               <option value="2">
                 Greek
               </option>
-              <option value="settingsSpanishAdmin.html">
+              <option value="3">
                 Spanish
               </option>
             </select>
@@ -95,13 +87,12 @@
       
       
     </div>
-  </form>
     
   
     <div class="grid_item_about">
       
       <div style="width: 100%; overflow: hidden;">
-        <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange4"> Font size </div>
+        <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange4"> Tamaño de fuente </div>
             <div style="margin-left: 800px;" class="changeable-text"> <select name="Font" onchange="changeFontSize(this.value)">
               <option value="24">
                 Small
