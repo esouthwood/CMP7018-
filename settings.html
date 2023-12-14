@@ -9,7 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="main2.js" defer></script>
-  
+
 
   <script>
     function changeFontSize(size) {
@@ -28,14 +28,23 @@
     // Submit the form
     form.submit();
   }
-</script> 
+</script>
 
+<script>
+function colourBlind(){
+  document.getElementById("settings1").style.backgroundColor = "#f1f6ff";
+  document.getElementById("settings2").style.backgroundColor = "#dde9ff";
+  document.getElementById("settings3").style.backgroundColor = "#f1f6ff";
+  document.getElementById("settings4").style.backgroundColor = "#dde9ff";
+
+}
+</script>
 </head>
 <body>
   <div class='title'>
-    
 
-    
+
+
     <a  href='homepage.html'>
       <img  class='title_element' id='home' src="home.png" alt="home">
     </a>
@@ -43,41 +52,41 @@
       <button class="title_element" id='settings_button' class="changeable-text">Home</button>
     </a>
     <div class='title_element' id='container2' class="changeable-text">Settings
-        
+
 
 
 
 <div class="grid_container_about" id="myGrid">
     <div class="grid_item_about">
-        
-        <div style="width: 100%; overflow: hidden;">
+
+        <div id="settings1">
             <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange1"> Text to speech </div>
             <div style="margin-left: 800px;"> <label class="switch">
                 <input type="checkbox">
                 <span class="slider"></span>
               </label> </div>
        </div>
-      
-      
+
+
     </div>
-  
-  
+
+
     <div class="grid_item_about">
-      
-      <div style="width: 100%; overflow: hidden;">
+
+      <div id="settings2">
         <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange2"> Colour blind settings </div>
             <div style="margin-left: 800px;"> <label class="switch" >
-                <input type="checkbox" onclick="applyColorMode">
-                <span class="slider"></span>
+                <input type="checkbox"  onclick="colourBlind()">
+                <span class="slider" onclick="colourBlind()"></span>
               </label> </div>
    </div>
-      
-      
+
+
     </div>
   <form action="settingsSpanish.html" id="myForm">
     <div class="grid_item_about">
-      
-      <div style="width: 100%; overflow: hidden;">
+
+      <div id="settings3">
         <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange3"> Language </div>
             <div style="margin-left: 800px;" class="changeable-text"> <select name="Language" id="" onchange="submitForm()">
               <option value="1">
@@ -92,15 +101,15 @@
             </select>
                    </div>
    </div>
-      
-      
+
+
     </div>
   </form>
-    
-  
+
+
     <div class="grid_item_about">
-      
-      <div style="width: 100%; overflow: hidden;">
+
+      <div id="settings4">
         <div style="width: 2vw; float: left; white-space: nowrap;" class="changeable-text" id="textToChange4"> Font size </div>
             <div style="margin-left: 800px;" class="changeable-text"> <select name="Font" onchange="changeFontSize(this.value)">
               <option value="24">
@@ -114,7 +123,7 @@
               </option>
             </select>
             </div>  </div>
-      
-      
+
+
     </div>
 </div>

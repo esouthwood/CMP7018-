@@ -650,3 +650,14 @@ video {
   box-shadow: 0 5px grey;
   transform: translateY(4px);
 }
+
+#settings1, #settings3{
+   style=width: 100%;
+   overflow: hidden;
+   background-color: #f6fef6;
+}
+#settings2, #settings4{
+   style=width: 100%;
+   overflow: hidden;
+   background-color: #e4fce4;
+}
