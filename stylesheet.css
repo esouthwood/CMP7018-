@@ -623,3 +623,30 @@ video {
   background-color: #014673;
   box-shadow: 0 5px grey;
 }
+
+.submit {
+  display: block;
+  padding: 5px;
+  background-color: #009BFF;
+  border-radius: 3vw;
+  border: none;
+  color: white;
+  width: 50%;
+  height: 20%;
+  height: 40%;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 3.5vw;
+}
+
+.submit:hover{
+  background-color: white;
+  color: #009BFF;
+  border: 2px solid #009BFF;
+}
+.submit:active {
+  background-color: #014673;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
