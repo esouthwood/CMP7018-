@@ -1,6 +1,3 @@
-function submitted() {
-  alert("Your results have been submitted!");
-}
 
 document.querySelectorAll('button').forEach(btn => btn.onclick = incDec);
 
@@ -17,28 +14,28 @@ function incDec(e) {
   num.value = val;
 }
 
-function customizeText(size) {
-  var elements = document.querySelectorAll(".changeable-text");
 
-  elements.forEach(function(element) {
-    // Change font size
-    var currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
-    //var newSize = (parseFloat(currentSize) + 2) + "px"; // Increase by 2 pixels
-    element.style.fontSize = size;
+var modal = document.getElementById("myModal3");
 
-    // Change color
-    var newColor = "red"; // Call a function to get a random color
-    element.style.color = newColor;
-  });
+// Get the button that opens the modal
+var btn = document.getElementById("btnsubmit");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-function applyColorMode() {
-  var body = document.body;
-  var colorMode = document.getElementById("colorMode").value;
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-  if (colorMode === "colorBlind") {
-    body.classList.add("color-blind");
-  } else {
-    body.classList.remove("color-blind");
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
